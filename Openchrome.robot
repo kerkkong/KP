@@ -20,7 +20,18 @@ Open Web browser
     click button    btnK
     capture page screenshot
 
+Login facebookfail
+    [LoginFail]
+    open browswer    ${url_facebook}    chrome
+    wait until page Contains    facebook
+    input text    email    ${Usernamefacebook}
+    input text    password    123456
+    Click Button    ปุ่มเข้าสู่ระบบ
+
 
 ***Test Cases***
 Searching
-    Open Web browser     
+    Open Web browser   
+
+Login
+    Login facebookfail   
